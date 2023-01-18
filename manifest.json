@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "RickRoller",
+    "icons":{
+        "48": "rick.png"
+    },
+    "version": "1.2",
+    "description": "There's a 33% chance of each link being a rickroll. So have fun I guess.",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_icon": {
+            "8": "rick.png",
+            "16": "rick.png",
+            "32": "rick.png",
+            "64": "rick.png",
+            "128": "rick.png"
+        },
+        "default_title": "RickRoller",
+        "default_popup": "popup.html"
+    }
+}
